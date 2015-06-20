@@ -7,7 +7,7 @@ import threading
 import affinity
 
 #os.system("taskset -p 0xff %d" % os.getpid())
-affinity.set_process_affinity_mask(0,2**mp.cpu_count()-1)
+affinity.set_process_affinity_mask(0, 2 ** mp.cpu_count() - 1)
 
 def primes(int kmax):
   cdef int n, k, i
